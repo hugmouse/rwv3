@@ -23,8 +23,20 @@ export default {
   width: 100%;
   max-width: 15em;
   cursor: pointer;
-  border: 1px solid #39495c;
   margin-bottom: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .event-card {
+    border: 1px solid #83b9f1;
+    color: #83b9f1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .event-card {
+    border: 1px solid #39495c;
+  }
 }
 
 .event-card:hover {
