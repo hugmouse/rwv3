@@ -16,6 +16,15 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
+  {
+    path: '/event/:id',
+    name: 'EventDetails',
+    props: true,
+    component: () =>
+      import(
+        /* webpackChunkName: "eventDetails" */ '../views/EventDetails.vue'
+      ),
+  },
 ]
 
 const router = createRouter({
